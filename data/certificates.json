@@ -1,0 +1,49 @@
+
+[
+    {
+        "certificate_id": "1f0c9a20-8b42-4a31-9c72-4d8f12a65e90",
+        "delivery_date": "2026-11-01",
+
+        "deliverable": {
+            "type": "PEC",
+            "name": "PEC III: El agua y sus usos",
+            "subject": "Ciencias Naturales"
+        },
+
+        "service": {
+            "type": "ACADEMIC_ADVISORY",
+            "description": "Asesoramiento y revisión académica"
+        },
+
+        "reviewer": {
+            "name": "Nombre del profesional",
+            "professional_title": "Ingeniero Mecatrónico",
+            "license": {
+                "type": "Cédula profesional",
+                "identifier": "12345678",
+                "issuing_authority": "Dirección General de Profesiones, SEP",
+                "country": "MX"
+            }
+        }
+    },
+    {
+        "certificate_id": "2f0c9a20-8b42-4a31-9c72-4d8f12a65e91",
+        "delivery_date": "2026-11-01",
+
+        "deliverable": {
+            "type": "TASK",
+            "name": "Investigación sobre sistemas de control",
+            "subject": "Ingeniería de Control"
+        },
+
+        "service": {
+            "type": "REVIEW",
+            "description": "Revisión técnica y corrección de contenido"
+        },
+
+        "reviewer": {
+            "name": "Nombre de la persona revisora",
+            "professional_title": "Ingeniero"
+        }
+    }
+]

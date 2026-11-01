@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#004f34">
+    <meta name="description" content="Consulta pública de constancias de CenzoSphere Education.">
+
+    <title>Consulta de constancia | CenzoSphere Education</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/certificate.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a class="brand" href="./" aria-label="CenzoSphere Education">
+                <span class="brand-mark">C</span>
+                <span class="brand-name">
+                    <strong>CenzoSphere</strong>
+                    <small>EDUCATION</small>
+                </span>
+            </a>
+
+            <span class="header-label">Consulta de constancias</span>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="page-heading">
+            <span class="eyebrow">CENZOSPHERE EDUCATION</span>
+            <h1>Constancia de servicio</h1>
+            <p>
+                Consulta la información pública correspondiente a la
+                constancia mediante su identificador único.
+            </p>
+        </section>
+
+        <!-- Estado inicial / carga -->
+        <section id="loading-state" class="state-card" aria-live="polite">
+            <span class="loader" aria-hidden="true"></span>
+            <h2>Consultando constancia</h2>
+            <p>Estamos localizando el registro solicitado.</p>
+        </section>
+
+        <!-- Estado de error -->
+        <section id="error-state" class="state-card error-state" hidden aria-live="assertive">
+            <div class="state-icon" aria-hidden="true">!</div>
+            <h2 id="error-title">No fue posible consultar la constancia</h2>
+            <p id="error-message">
+                Ocurrió un problema durante la consulta.
+            </p>
+            <button id="retry-button" class="secondary-button" type="button">
+                Intentar nuevamente
+            </button>
+        </section>
+
+        <!-- Contenido de la constancia -->
+        <article id="certificate" class="certificate-card" hidden>
+            <div class="certificate-top">
+                <div class="certificate-emblem" aria-hidden="true">C</div>
+
+                <div class="certificate-brand">
+                    <strong>CenzoSphere Education</strong>
+                    <span>ASESORAMIENTO Y APOYO ACADÉMICO</span>
+                </div>
+
+                <span class="record-status">
+                    <span class="status-dot"></span>
+                    Registro localizado
+                </span>
+            </div>
+
+            <div class="certificate-content">
+                <div class="certificate-title">
+                    <span class="eyebrow">CONSTANCIA</span>
+                    <h2>Constancia de revisión y asesoramiento académico</h2>
+                    <p>
+                        Se hace constar la prestación del servicio descrito
+                        en el presente documento.
+                    </p>
+                </div>
+
+                <div class="certificate-divider"></div>
+
+                <div class="information-grid">
+                    <section class="information-section">
+                        <span class="section-label">TRABAJO O ENTREGABLE</span>
+
+                        <h3 id="deliverable-name">—</h3>
+
+                        <div class="data-row">
+                            <span>Tipo de entregable</span>
+                            <strong id="deliverable-type">—</strong>
+                        </div>
+
+                        <div class="data-row">
+                            <span>Asignatura o área</span>
+                            <strong id="deliverable-subject">—</strong>
+                        </div>
+                    </section>
+
+                    <section class="information-section">
+                        <span class="section-label">SERVICIO PRESTADO</span>
+
+                        <h3 id="service-description">—</h3>
+
+                        <div class="data-row">
+                            <span>Tipo de servicio</span>
+                            <strong id="service-type">—</strong>
+                        </div>
+                    </section>
+
+                    <section class="information-section">
+                        <span class="section-label">PERSONA REVISORA</span>
+
+                        <h3 id="reviewer-name">—</h3>
+
+                        <div class="data-row">
+                            <span>Formación o título profesional</span>
+                            <strong id="reviewer-title">—</strong>
+                        </div>
+
+                        <div id="license-container" class="license-container" hidden>
+                            <div class="data-row">
+                                <span>Credencial</span>
+                                <strong id="license-type">—</strong>
+                            </div>
+
+                            <div class="data-row">
+                                <span>Identificador</span>
+                                <strong id="license-identifier">—</strong>
+                            </div>
+
+                            <div class="data-row" id="license-authority-row" hidden>
+                                <span>Autoridad emisora</span>
+                                <strong id="license-authority">—</strong>
+                            </div>
+
+                            <div class="data-row">
+                                <span>País</span>
+                                <strong id="license-country">—</strong>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="information-section date-section">
+                        <span class="section-label">FECHA DE ENTREGA</span>
+                        <h3 id="delivery-date">—</h3>
+                    </section>
+                </div>
+
+                <div class="certificate-divider"></div>
+
+                <div class="certificate-id-container">
+                    <div>
+                        <span class="section-label">IDENTIFICADOR DE CONSTANCIA</span>
+                        <p id="certificate-id" class="certificate-id">—</p>
+                    </div>
+
+                    <button id="copy-id-button" class="copy-button" type="button">
+                        Copiar ID
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-bottom">
+                <span>Documento de consulta pública</span>
+                <span>CenzoSphere Education</span>
+            </div>
+        </article>
+
+        <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
+
+        <section class="verification-note">
+            <span class="note-icon" aria-hidden="true">i</span>
+            <p>
+                El estado «Registro localizado» indica que existe una ficha
+                correspondiente al identificador consultado en el registro
+                público de CenzoSphere Education. No representa una
+                verificación mediante firma electrónica.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <strong>CenzoSphere Education</strong>
+                <span>Asesoramiento y apoyo académico</span>
+            </div>
+
+            <div class="legal-notice">
+                <h2>AVISO SOBRE EL ALCANCE DE ESTA CONSTANCIA</h2>
+
+                <p>
+                    Esta constancia documenta exclusivamente la prestación del
+                    servicio de asesoramiento, revisión, corrección, tutoría o
+                    apoyo académico descrito en este documento por CenzoSphere
+                    Education. No constituye un certificado de estudios,
+                    título, grado académico, acreditación, evaluación oficial
+                    ni documento expedido por la institución educativa del
+                    destinatario.
+                </p>
+
+                <p>
+                    CenzoSphere Education es independiente de la Secretaría de
+                    Educación Pública (SEP) y de las instituciones educativas
+                    mencionadas. Esta constancia no cuenta con reconocimiento,
+                    validación, autorización ni aval de la SEP o de dichas
+                    instituciones. No acredita la aprobación de asignaturas,
+                    exámenes o evaluaciones; tampoco garantiza calificaciones,
+                    resultados académicos, aceptación institucional ni la
+                    autoría del trabajo.
+                </p>
+
+                <p>
+                    La identificación de una persona revisora y, en su caso,
+                    la referencia a una credencial profesional se incluyen
+                    con fines informativos. Salvo indicación expresa y
+                    evidencia verificable, su inclusión no implica que
+                    CenzoSphere Education haya certificado su autenticidad o
+                    vigencia.
+                </p>
+
+                <p>
+                    La consulta del registro mediante el código QR permite
+                    localizar la ficha publicada correspondiente. Por sí
+                    sola, no equivale a una firma electrónica ni constituye
+                    una certificación oficial de la identidad del emisor o
+                    de la veracidad material del servicio.
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="current-year"></span> CenzoSphere Education</span>
+                <span>Registro público de constancias</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
