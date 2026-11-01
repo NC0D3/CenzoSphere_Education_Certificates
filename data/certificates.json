@@ -6,8 +6,8 @@
 
         "deliverable": {
             "type": "PEC",
-            "name": "PEC III: El agua y sus usos",
-            "subject": "Ciencias Naturales"
+            "name": "PEC III: A este jara le gustan las mates",
+            "subject": "Mates xddd"
         },
 
         "service": {
@@ -16,11 +16,11 @@
         },
 
         "reviewer": {
-            "name": "Nombre del profesional",
+            "name": "Raymundo Mendoza Cardenas",
             "professional_title": "Ingeniero Mecatrónico",
             "license": {
                 "type": "Cédula profesional",
-                "identifier": "12345678",
+                "identifier": "15161199",
                 "issuing_authority": "Dirección General de Profesiones, SEP",
                 "country": "MX"
             }
