@@ -2,12 +2,12 @@
 [
     {
         "certificate_id": "1f0c9a20-8b42-4a31-9c72-4d8f12a65e90",
-        "delivery_date": "2026-11-01",
+        "delivery_date": "2026-11-04",
 
         "deliverable": {
             "type": "PEC",
-            "name": "PEC III: A este jara le gustan las mates",
-            "subject": "Mates xddd"
+            "name": "PEC III QUIMICA Parte II: Implementación de una alternativa de solución",
+            "subject": "Quimica"
         },
 
         "service": {
