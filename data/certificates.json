@@ -28,11 +28,11 @@
     },
     {
         "certificate_id": "2f0c9a20-8b42-4a31-9c72-4d8f12a65e91",
-        "delivery_date": "2026-11-01",
+        "delivery_date": "2026-11-09",
 
         "deliverable": {
-            "type": "TASK",
-            "name": "Investigación sobre sistemas de control",
+            "type": "PEC",
+            "name": "Biodiversidad Reactiva",
             "subject": "Ingeniería de Control"
         },
 
