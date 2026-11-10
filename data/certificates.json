@@ -7,7 +7,7 @@
         "deliverable": {
             "type": "PEC",
             "name": "PEC III QUIMICA Parte II: Implementación de una alternativa de solución",
-            "subject": "Quimica"
+            "subject": "Química"
         },
 
         "service": {
@@ -33,17 +33,23 @@
         "deliverable": {
             "type": "PEC",
             "name": "Biodiversidad Reactiva",
-            "subject": "Ingeniería de Control"
+            "subject": "Química"
         },
 
         "service": {
-            "type": "REVIEW",
-            "description": "Revisión técnica y corrección de contenido"
+            "type": "ACADEMIC_ADVISORY",
+            "description": "Asesoramiento y revisión académica"
         },
 
         "reviewer": {
-            "name": "Nombre de la persona revisora",
-            "professional_title": "Ingeniero"
+            "name": "Raymundo Mendoza Cardenas",
+            "professional_title": "Ingeniero Mecatrónico",
+            "license": {
+                "type": "Cédula profesional",
+                "identifier": "15161199",
+                "issuing_authority": "Dirección General de Profesiones, SEP",
+                "country": "MX"
+            }
         }
     }
 ]
